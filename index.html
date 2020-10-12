@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+        <title>Sports Order Form</title>
+    </head>
+
+    <body>
+        <h1>Sports Order Form</h1>
+        <section>
+            <form action="index.php" method="POST">
+                <label for="ftName">First Name:</label>
+                <input type="text" name="ftName" id="firstName"><br><br>
+
+                <label for="ltName">Last Name</label>
+                <input type="text" name="ltName" id="lastName" required><br><br>
+
+                <label for="email">Enter your email address</label>
+                <input type="email" name="emailAddress" id="email" required><br><br>
+
+                <label for="date">Enter your Date of Birth</label>
+                <input type="date" name="dateOfBirth" id="date" required><br><br>
+
+                <label for="runner">Are you a runner?</label>
+                <label for="yes">Yes</label>
+                <input type="checkbox" value="Yes" name="ckBox" class="check">
+                <label for="no">No</label>
+                <input type="checkbox" value="No" name="ckBox" class="check"><br><br>
+
+                <label>What is your favourite terrain?</label><br>
+                <div>
+                    <input type="radio" value="Road" id="road" name="terrain" class="terrain">
+                    <label for="road">Road</label><br>
+                    <input type="radio" value="Track" id="track" name="terrain" class="terrain">
+                    <label for="track">Track</label><br>
+                    <input type="radio" value="Trail" id="trail" name="terrain" class="terrain">
+                    <label for="trail">Trail</label><br><br>
+                </div>
+
+                <label for="shoes">On a scale of 1-10, how would you rate your current
+                    shoes?</label>
+                <input type="number" name="currentShoes" id="shoes"><br><br>
+
+                <label for="street">Street</label>
+                <input type="text" name="streetInput" id="street"><br><br>
+
+                <label for="city">City</label>
+                <input type="text" name="cityInput" id="city"><br><br>
+
+                <label for="province">Province</label>
+                <select name="province" class="selectProvince" required>
+                    <div>
+                        <option></option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="BritishColumbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Nntario">Ontario</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Yukon">Yukon</option>
+                    </div>
+                </select><br><br>
+
+                <label for="postalCode">Postal Code</label>
+                <input type="text" name="postal" id="postalCode"><br><br>
+
+                <label for="shipping">Please select your shipping option</label><br>
+                <div class="shipping">
+                    <input type="radio" value="Canada Post" id="canadaPost"
+                        name="shipping">
+                    <label for="canadaPost">Canada Post</label><br>
+                    <input type="radio" value="FedEx" id="fedEx" name="shipping">
+                    <label for="fedEx">FedEx</label><br>
+                    <input type="radio" value="UPS" id="ups" name="shipping">
+                    <label for="ups">UPS</label><br><br>
+                </div>
+                <input type="submit" id="submit" name="submit">
+
+            </form>
+        </section>
+        <script src="JavaScript/script.js"></script>
+    </body>
+
+</html>

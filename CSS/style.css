@@ -1,0 +1,79 @@
+/* css for form and server side validation
+Author Jasleen Dhillon */
+
+body {
+    background-color: rgb(250, 213, 213);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(124, 29, 29);
+    font-size: 50px;
+}
+
+section {
+    border: 2px solid;
+    width: 70%;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding-left: 8%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    border-color: rgb(82, 41, 67);
+}
+
+form {
+    font-size: 25px;
+}
+
+#shoes {
+    width: 100px;
+    height: 26px;
+    font-size: 25px;
+}
+
+input[type="text"] {
+    font-size: 25px;
+    width: 200px;
+    height: 26px;
+}
+
+#email {
+    font-size: 25px;
+    width: 200px;
+    height: 26px;
+}
+
+#date {
+    font-size: 25px;
+    width: 200px;
+    height: 26px;
+}
+
+input.check {
+    height: 26px;
+    width: 25px;
+}
+
+input[type=submit] {
+    width: 130px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.selectProvince {
+    width: 150px;
+    height: 33px;
+}
+
+.error {
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+
+.valid {
+    font-size: 25px;
+    color: green;
+}
